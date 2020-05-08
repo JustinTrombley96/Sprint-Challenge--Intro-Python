@@ -19,13 +19,17 @@ class GroundVehicle():
 
 # TODO
 
+
 vehicles = [
-    GroundVehicle(),
-    GroundVehicle(),
-    Motorcycle(),
-    GroundVehicle(),
-    Motorcycle(),
+    GroundVehicle,
+    GroundVehicle,
+    Motorcycle,
+    GroundVehicle,
+    Motorcycle,
 ]
+
+driveSound = (vehicles[i].drive() for i in range(len(vehicles)))
+print(list(driveSound))
 
 # Go through the vehicles list and print the result of calling drive() on each.
 
